@@ -7,9 +7,6 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-image: url(./img/universitários.jpg);
-    background-size: contain;
-
 }
 header{
     background-color: #142435;
@@ -46,7 +43,7 @@ img[type=logo]{
     background-size: cover;
     background-position: center top;
 }
-main >div{
+#sobre-mim >div{
     padding-top: 20px;
     margin: 0 auto;
     width: 80vw;
@@ -78,6 +75,22 @@ div > h3{
     text-align: center;
     color: #0d151d;
     text-shadow: 1px 1px 1px#ffffff;
+}
+#produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px 15px;
+    gap: 15px;
+}
+#card{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-row: 1fr 50px;
+    gap: 15px;
+}
+img[type=Produto]{
+    width: 100%;
 }
 footer{
     width: 100%;
@@ -140,5 +153,10 @@ footer > p{
     #menu-superior > a{
         font-size: 16px;
         margin-left: 10px;    
+    }
+    #produtos{
+        display: flex;
+        flex-direction: column;
+        gap
     }
 }
