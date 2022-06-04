@@ -17,6 +17,8 @@ Cabeçalho
  
 Rodapé
 
+OBS: As imagens utilizdas foram retiradas do Google
+
 ![Captura de Tela (42)](https://user-images.githubusercontent.com/104537653/172020149-cc9611d1-a9ec-4b40-a515-7c52a2d1f438.png)
 ![Captura de Tela (43)](https://user-images.githubusercontent.com/104537653/172020147-74badbf0-5f04-48de-b43a-609d7b865bce.png)
 
