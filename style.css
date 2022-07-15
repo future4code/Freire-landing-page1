@@ -1,0 +1,168 @@
+/* Regras Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Corpo do site (body) */
+body{
+    width: 100%;
+}
+/* Cabeçalho */
+header{
+    background-color: #142435;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-items: flex-end;
+    padding: 10px 15px;
+    align-items: center;
+}
+img[type=logo]{
+    width: 100%;
+}
+/* Cabeçalho Mobile */
+.mobile{
+    display: none;
+}
+/* Menu de Navegação Superior */
+#menu-superior > a{
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+#menu-superior > a:hover{
+    opacity: 60%;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+#menu-superior > a:active{
+    opacity: 100%;
+}
+/* Quem Somos */
+#sobre-mim{
+    max-width: 100vw;
+    height: 110vh;
+    background-image: url(./img/universitários.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+#sobre-mim >div{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;   
+}
+div > h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #0d151d;
+    text-shadow: 1px 1px 1px#ffffff;
+}
+/* Botões */
+.botao {
+    color: #ffffff;
+    width: 150px;
+    height: 5vh;
+    padding: 5px 10px;
+    text-align: center;
+    border:1px solid #142435;
+    border-radius:30px;
+    background-color: #1424355d;
+    justify-self: center;
+    align-self: flex-start;
+}
+.botao:hover{
+    background-color: #142435;
+    opacity: 100%;
+    color: white;
+}
+/* Produtos */
+#produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px 15px;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+#card{
+    width: 100%;
+    display: grid;
+    grid-row: 1fr 50px;
+    gap: 15px;
+}
+#card:hover{
+    opacity: 95%;
+}
+img[type=Produto]{
+    width: 100%;
+}
+/* Rodapé */
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #142435;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: white;
+    align-items: center;
+    padding: 5vh 0px;
+}
+img[type=logo-footer]{
+    width: 60%;
+}
+footer > p{
+    padding-left: 15px;
+}
+.fotosFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ajustando para Mobile */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    header{
+        height: 8vh;
+        grid-template-columns: 1fr 2fr;
+    }
+    #sobre-mim{
+        height: 80vh;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    img[type=logo-footer]{
+        width: 50%;
+    }    
+    div > h3{
+        font-size: 16px;
+    }
+    #menu-superior > a{
+        font-size: 16px;
+        margin-left: 10px;    
+    }
+    #produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #card{
+        width: 90%;
+    }
+}
